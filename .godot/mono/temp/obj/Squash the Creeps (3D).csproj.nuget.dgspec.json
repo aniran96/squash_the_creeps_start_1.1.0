@@ -1,37 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "E:\\muse project\\Muse Game\\squash_the_creeps_start_1.1.0\\Squash the Creeps (3D).csproj": {}
+    "/home/animesh/Games/squash_the_creeps_start_1.1.0/Squash the Creeps (3D).csproj": {}
   },
   "projects": {
-    "E:\\muse project\\Muse Game\\squash_the_creeps_start_1.1.0\\Squash the Creeps (3D).csproj": {
+    "/home/animesh/Games/squash_the_creeps_start_1.1.0/Squash the Creeps (3D).csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\muse project\\Muse Game\\squash_the_creeps_start_1.1.0\\Squash the Creeps (3D).csproj",
+        "projectUniqueName": "/home/animesh/Games/squash_the_creeps_start_1.1.0/Squash the Creeps (3D).csproj",
         "projectName": "Squash the Creeps (3D)",
-        "projectPath": "E:\\muse project\\Muse Game\\squash_the_creeps_start_1.1.0\\Squash the Creeps (3D).csproj",
-        "packagesPath": "C:\\Users\\anime\\.nuget\\packages\\",
-        "outputPath": "E:\\muse project\\Muse Game\\squash_the_creeps_start_1.1.0\\.godot\\mono\\temp\\obj\\",
+        "projectPath": "/home/animesh/Games/squash_the_creeps_start_1.1.0/Squash the Creeps (3D).csproj",
+        "packagesPath": "/home/animesh/.nuget/packages/",
+        "outputPath": "/home/animesh/Games/squash_the_creeps_start_1.1.0/.godot/mono/temp/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\anime\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/animesh/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -39,24 +32,23 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "Godot.SourceGenerators": {
               "target": "Package",
-              "version": "[4.3.0, )"
+              "version": "[4.4.0, )"
             },
             "GodotSharp": {
               "target": "Package",
-              "version": "[4.3.0, )"
+              "version": "[4.4.0, )"
+            },
+            "GodotSharpEditor": {
+              "target": "Package",
+              "version": "[4.4.0, )"
             }
           },
           "imports": [
@@ -70,31 +62,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-              "version": "[6.0.35, 6.0.35]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Runtime.win-x64",
-              "version": "[6.0.35, 6.0.35]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-              "version": "[6.0.35, 6.0.35]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "win-x64": {
-          "#import": []
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.114/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

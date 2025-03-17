@@ -1,0 +1,138 @@
+[gd_scene load_steps=10 format=3 uid="uid://p8gieoy5nxa"]
+
+[ext_resource type="Script" uid="uid://s4kkmctoyui2" path="res://Scripts/Main/Main.cs" id="1_8ttnm"]
+[ext_resource type="PackedScene" uid="uid://b5tlakq68d1rp" path="res://Scenes/Characters/Player/player.tscn" id="1_nvk4a"]
+[ext_resource type="PackedScene" uid="uid://cdmwt174s13pr" path="res://Scenes/Characters/Enemies/mob.tscn" id="2_ldege"]
+[ext_resource type="Theme" uid="uid://bw0mavqv0ah27" path="res://Resources/new_theme.tres" id="4_hdgn2"]
+[ext_resource type="Script" uid="uid://djbj1j7hpmaui" path="res://Scripts/UI/ScoreLabel.cs" id="5_x8nn6"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_ddjj1"]
+size = Vector3(60, 2, 60)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tkxny"]
+size = Vector3(60, 2, 60)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4ahdq"]
+albedo_color = Color(0.827547, 0, 0.0739233, 1)
+
+[sub_resource type="Curve3D" id="Curve3D_w1wj8"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -13.0199, 0, -14.4163, 0, 0, 0, 0, 0, 0, 14.35, 0, -14.6588, 0, 0, 0, 0, 0, 0, 14.2198, 0, 18.4128, 0, 0, 0, 0, 0, 0, -13.9476, 0, 19.6065, 0, 0, 0, 0, 0, 0, -13.0199, 0, -14.4163),
+"tilts": PackedFloat32Array(0, 0, 0, 0, 0)
+}
+point_count = 5
+
+[node name="Main" type="Node" node_paths=PackedStringArray("mobSpawnLocation")]
+script = ExtResource("1_8ttnm")
+mobScene = ExtResource("2_ldege")
+mobSpawnLocation = NodePath("EnemySpawnPath/EnemySpawnLocation")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0.161562, 0.230835, 0.959486, -0.473178, 0.87133, -0.12995, 0, 15, 0)
+shadow_enabled = true
+
+[node name="Floor" type="StaticBody3D" parent="."]
+collision_layer = 4
+collision_mask = 0
+metadata/_edit_group_ = true
+
+[node name="FloorMesh" type="MeshInstance3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+mesh = SubResource("BoxMesh_ddjj1")
+
+[node name="FloorCollider" type="CollisionShape3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+shape = SubResource("BoxShape3D_tkxny")
+
+[node name="Player" parent="." instance=ExtResource("1_nvk4a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.26936, 0)
+jumpSpeed = 20.0
+gravity = 75.0
+
+[node name="CameraPivot" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 0, 0)
+
+[node name="Camera3D" type="Camera3D" parent="CameraPivot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 19)
+projection = 1
+current = true
+size = 19.0
+
+[node name="Cylinders" type="Node" parent="."]
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="Cylinders"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 3.57506, -14.4)
+visible = false
+material_override = SubResource("StandardMaterial3D_4ahdq")
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="Cylinders"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.3, 3.57506, -14.6)
+visible = false
+material_override = SubResource("StandardMaterial3D_4ahdq")
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="Cylinders"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.3, 3.57506, 18.4)
+visible = false
+material_override = SubResource("StandardMaterial3D_4ahdq")
+
+[node name="CSGCylinder3D4" type="CSGCylinder3D" parent="Cylinders"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 4.57506, 19.8)
+visible = false
+material_override = SubResource("StandardMaterial3D_4ahdq")
+
+[node name="EnemySpawnPath" type="Path3D" parent="."]
+curve = SubResource("Curve3D_w1wj8")
+
+[node name="EnemySpawnLocation" type="PathFollow3D" parent="EnemySpawnPath"]
+transform = Transform3D(0.00885955, 0, -0.999956, 0, 0.999999, 0, 0.999956, 0, 0.00885955, -13.0199, 0, -14.4163)
+
+[node name="MobSpawnTimer" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("4_hdgn2")
+
+[node name="ScoreLabel" type="Label" parent="UI"]
+layout_mode = 0
+offset_left = 342.0
+offset_top = 12.0
+offset_right = 482.0
+offset_bottom = 58.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Score : 0"
+horizontal_alignment = 1
+script = ExtResource("5_x8nn6")
+
+[node name="GameOverBackGround" type="ColorRect" parent="UI"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.380392)
+
+[node name="RetryMessage" type="Label" parent="UI/GameOverBackGround"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -110.0
+offset_top = -38.0
+offset_right = 111.0
+offset_bottom = 14.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Press Enter to Retry"
+
+[connection signal="Hit" from="Player" to="." method="OnPlayerHit"]
+[connection signal="timeout" from="MobSpawnTimer" to="." method="OnMobSpawnTimerTimeout"]

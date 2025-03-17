@@ -1,0 +1,45 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1742221274
+export_presets.cfg::TextFile/TextFile::-1::1733379116::0::1::::<><><>0<>0<><>::
+::res://Assets/::1733319148
+::res://Assets/art/::1742221258
+body.material::StandardMaterial3D/StandardMaterial3D::-1::1605908508::0::1::::<><><>0<>0<><>::
+eye.material::StandardMaterial3D/StandardMaterial3D::-1::1606514142::0::1::::<><><>0<>0<><>::
+House In a Forest Loop.ogg::AudioStreamOggVorbis/AudioStreamOggVorbis::838741693534990627::1580874010::1742221256::1::::<><><>0<>0<>2969260351e4fa0739d409a7fbb7b6a8<>res://.godot/imported/House In a Forest Loop.ogg-074a79c39ff6b8c8776f51b7e47d7327.oggvorbisstr::
+mob.glb::PackedScene/PackedScene::4596559345656353083::1606513980::1742221258::1::::<><><>0<>0<>c23cbcd01d8531cc1a784ba979200c17<>res://.godot/imported/mob.glb-3c66bb0885485f7a9dce9309030f9925.scn::
+mob_body.material::StandardMaterial3D/StandardMaterial3D::-1::1606514142::0::1::::<><><>0<>0<><>::
+mob_eye.material::StandardMaterial3D/StandardMaterial3D::-1::1605969816::0::1::::<><><>0<>0<><>::
+player.glb::PackedScene/PackedScene::1884920819227976562::1606514058::1742221258::1::::<><><>0<>0<>8aa4ea6eb4762451d3ee90c69789a9c7<>res://.godot/imported/player.glb-ba11be59969bf915602cf11d683c29f1.scn::
+pupil.material::StandardMaterial3D/StandardMaterial3D::-1::1606514142::0::1::::<><><>0<>0<><>::
+::res://Assets/fonts/::1742221256
+LICENSE.txt::TextFile/TextFile::-1::1605988452::0::1::::<><><>0<>0<><>::
+Montserrat-Medium.ttf::FontFile/FontFile::3204521682530465399::1323702000::1742221256::1::::<><><>0<>0<>fba43b9d6cca45866da750e87044de00<>res://.godot/imported/Montserrat-Medium.ttf-d522fadf85eb9903f62e7923534bab5a.fontdata::
+::res://AutoLoads/::1733371746
+::res://AutoLoads/Scene AutoLoads/::1733378124
+music_player.tscn::PackedScene::5649076069534215338::1742221275::0::1::::<><><>0<>0<><>::uid://l7j7n3v06ryh::::res://Assets/art/House In a Forest Loop.ogg
+::res://AutoLoads/Script AutoLoads/::1742221256
+GlobalConstants.cs::CSharpScript/CSharpScript::6174659084186630035::1733320502::0::1::::<>Node<><>0<>0<><>::
+::res://Resources/::1733352476
+default_bus_layout.tres::AudioBusLayout/AudioBusLayout::-1::1733319022::0::1::::<><><>0<>0<><>::
+default_env.tres::Environment/Environment::-1::1733319022::0::1::::<><><>0<>0<><>::
+new_theme.tres::Theme/Theme::3982914420189290498::1733352476::0::1::::<><><>0<>0<><>::uid://blwkaesi360gp::::res://Assets/fonts/Montserrat-Medium.ttf
+::res://Scenes/::1733319654
+::res://Scenes/Characters/::1733322968
+::res://Scenes/Characters/Enemies/::1733378182
+mob.tscn::PackedScene::5009551551657653007::1742221275::0::1::::<><><>0<>0<><>::uid://bbohjdp5c734l::::res://Scripts/Characters/Enemies/Mob.cs<>uid://b6quwp7lkxdwl::::res://Assets/art/mob.glb
+::res://Scenes/Characters/Player/::1733378124
+player.tscn::PackedScene::4531977608484757313::1742221275::0::1::::<><><>0<>0<><>::uid://d1s17f3e6j1wk::::res://Scripts/Characters/Player/Player.cs<>uid://14cmukhtnlj3::::res://Assets/art/player.glb
+::res://Scenes/Main/::1733378122
+main.tscn::PackedScene::32980468871001074::1742221275::0::1::::<><><>0<>0<><>::uid://s4kkmctoyui2::::res://Scripts/Main/Main.cs<>uid://b5tlakq68d1rp::::res://Scenes/Characters/Player/player.tscn<>uid://cdmwt174s13pr::::res://Scenes/Characters/Enemies/mob.tscn<>uid://bw0mavqv0ah27::::res://Resources/new_theme.tres<>uid://djbj1j7hpmaui::::res://Scripts/UI/ScoreLabel.cs
+::res://Scripts/::1733352672
+::res://Scripts/Characters/::1733323160
+::res://Scripts/Characters/Enemies/::1742221256
+Mob.cs::CSharpScript/CSharpScript::2485952089091622773::1733377884::0::1::::<>CharacterBody3D<><>0<>0<><>::
+::res://Scripts/Characters/Player/::1742221256
+Player.cs::CSharpScript/CSharpScript::9022966878552932886::1733375564::0::1::::<>CharacterBody3D<><>0<>0<><>::
+::res://Scripts/Main/::1742221256
+Main.cs::CSharpScript/CSharpScript::1323891802471789051::1733370774::0::1::::<>Node<><>0<>0<><>::
+::res://Scripts/UI/::1742221256
+ScoreLabel.cs::CSharpScript/CSharpScript::7793619427634537824::1733353840::0::1::::<>Label<><>0<>0<><>::
+::res://Tools/::1742221256
+icon.png::CompressedTexture2D/CompressedTexture2D::7409155535266663810::1606009720::1742221256::1::::<><><>0<>0<>b5d82dbf731be009c1ad0b8eb52c5185<>res://.godot/imported/icon.png-d2ecfc5f10f1e9371b32742b016d15c0.ctex::

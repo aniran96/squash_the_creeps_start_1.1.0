@@ -1,0 +1,2 @@
+﻿40507
+/home/animesh/softwares/Godot 4.4/Godot_44

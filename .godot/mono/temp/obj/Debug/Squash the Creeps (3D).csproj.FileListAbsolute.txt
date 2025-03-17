@@ -1,0 +1,17 @@
+E:\muse project\Muse Game\squash_the_creeps_start_1.1.0\.godot\mono\temp\bin\Debug\Squash the Creeps (3D).deps.json
+E:\muse project\Muse Game\squash_the_creeps_start_1.1.0\.godot\mono\temp\bin\Debug\Squash the Creeps (3D).runtimeconfig.json
+E:\muse project\Muse Game\squash_the_creeps_start_1.1.0\.godot\mono\temp\bin\Debug\Squash the Creeps (3D).dll
+E:\muse project\Muse Game\squash_the_creeps_start_1.1.0\.godot\mono\temp\bin\Debug\Squash the Creeps (3D).pdb
+E:\muse project\Muse Game\squash_the_creeps_start_1.1.0\.godot\mono\temp\bin\Debug\GodotSharp.dll
+E:\muse project\Muse Game\squash_the_creeps_start_1.1.0\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+E:\muse project\Muse Game\squash_the_creeps_start_1.1.0\.godot\mono\temp\obj\Debug\Squash the Creeps (3D).csproj.AssemblyReference.cache
+E:\muse project\Muse Game\squash_the_creeps_start_1.1.0\.godot\mono\temp\obj\Debug\Squash the Creeps (3D).GeneratedMSBuildEditorConfig.editorconfig
+E:\muse project\Muse Game\squash_the_creeps_start_1.1.0\.godot\mono\temp\obj\Debug\Squash the Creeps (3D).AssemblyInfoInputs.cache
+E:\muse project\Muse Game\squash_the_creeps_start_1.1.0\.godot\mono\temp\obj\Debug\Squash the Creeps (3D).AssemblyInfo.cs
+E:\muse project\Muse Game\squash_the_creeps_start_1.1.0\.godot\mono\temp\obj\Debug\Squash the Creeps (3D).csproj.CoreCompileInputs.cache
+E:\muse project\Muse Game\squash_the_creeps_start_1.1.0\.godot\mono\temp\obj\Debug\Squash t.495F87DD.Up2Date
+E:\muse project\Muse Game\squash_the_creeps_start_1.1.0\.godot\mono\temp\obj\Debug\Squash the Creeps (3D).dll
+E:\muse project\Muse Game\squash_the_creeps_start_1.1.0\.godot\mono\temp\obj\Debug\refint\Squash the Creeps (3D).dll
+E:\muse project\Muse Game\squash_the_creeps_start_1.1.0\.godot\mono\temp\obj\Debug\Squash the Creeps (3D).pdb
+E:\muse project\Muse Game\squash_the_creeps_start_1.1.0\.godot\mono\temp\obj\Debug\Squash the Creeps (3D).genruntimeconfig.cache
+E:\muse project\Muse Game\squash_the_creeps_start_1.1.0\.godot\mono\temp\obj\Debug\ref\Squash the Creeps (3D).dll
